@@ -1,0 +1,15 @@
+[project]
+org-name= "kapilraaj"
+version= "0.1.0"
+
+[build-options]
+observability-included=true
+
+[dependencies]
+
+[platform] 
+target = "java11" 
+
+[[platform.libraries]] 
+path = "./javalibs/cdata.jdbc.salesforce.jar" 
+modules = ["foo"]
