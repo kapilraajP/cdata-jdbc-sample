@@ -38,7 +38,6 @@ public function main() returns @tainted error?{
             io:println("Fetching data in stream by foreach failed!");
             io:println(e);
         }
-
         e = resultStream.close();
         
 
@@ -88,7 +87,6 @@ public function main() returns @tainted error?{
             io:println("Fetching data in stream by foreach failed!");
             io:println(e);
         }
-
         e = resultStream.close();
 
 
