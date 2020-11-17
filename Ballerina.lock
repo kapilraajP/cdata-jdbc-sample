@@ -3,30 +3,30 @@ version = "0.1.0"
 lockfile_version = "1.0.0"
 ballerina_version = "slp5"
 
-[[imports."kapilraaj/foo:0.1.0"]]
-org_name = "ballerina"
-name = "io"
-version = "0.5.1"
-
-[[imports."kapilraaj/foo:0.1.0"]]
-org_name = "ballerina"
-name = "java.jdbc"
-version = "0.5.1"
-
-[[imports."kapilraaj/foo:0.1.0"]]
-org_name = "ballerina"
-name = "sql"
-version = "0.5.1"
-
-[[imports."kapilraaj/foo:0.1.0"]]
-org_name = "ballerina"
-name = "config"
-version = "1.0.1"
-
 [[imports."ballerina/system:0.6.1"]]
 org_name = "ballerina"
 name = "io"
 version = "0.5.1"
+
+[[imports."kapilraaj/cdata_salesforce:0.1.0"]]
+org_name = "ballerina"
+name = "io"
+version = "0.5.1"
+
+[[imports."kapilraaj/cdata_salesforce:0.1.0"]]
+org_name = "ballerina"
+name = "java.jdbc"
+version = "0.5.1"
+
+[[imports."kapilraaj/cdata_salesforce:0.1.0"]]
+org_name = "ballerina"
+name = "sql"
+version = "0.5.1"
+
+[[imports."kapilraaj/cdata_salesforce:0.1.0"]]
+org_name = "ballerina"
+name = "config"
+version = "1.0.1"
 
 [[imports."ballerina/java.jdbc:0.5.1"]]
 org_name = "ballerina"
