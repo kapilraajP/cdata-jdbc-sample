@@ -55,7 +55,7 @@ This can be executed by providing path to executable file generated after build 
 ```ballerina
 ballerina run target/bin/cdata_salesforce.jar --b7a.config.file=ballerina.conf
 ```
-
+Connection string obtain data from ballerina.conf file and create connection and initiate jdbc client
 ```ballerina    
 jdbc:Client cdataSalesforceDB = check new (
     "jdbc:salesforce:User="+config:getAsString("SALESFORCE_USERNAME") + ";Password=" + config:getAsString("PASSWORD") + ";Security Token=" + config:getAsString("TOKEN")
