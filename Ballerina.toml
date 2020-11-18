@@ -12,4 +12,4 @@ target = "java11"
 
 [[platform.libraries]] 
 path = "./javalibs/cdata.jdbc.salesforce.jar" 
-modules = ["foo"]
+modules = ["cdata_salesforce"]
