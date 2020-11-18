@@ -203,6 +203,7 @@ if (batchResults is sql:ExecutionResult[]) {
 ```
         
 #### Stored Procedures
+To execute Stored procedures available we have to use remote method `call` and provide the relevant procedure to perform, for example here `GetUserInformation` is the procedure being called. Stored procedures may take a list of parameters and returns a data that constitute the response.
 ```ballerina
 sql:ProcedureCallResult|sql:Error retCall = 
                         cdataSalesforceDB->call("{CALL GetUserInformation()}");
