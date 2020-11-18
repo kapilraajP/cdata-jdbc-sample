@@ -47,6 +47,15 @@ While executing the program, provide configuration details in the ballerina.conf
     PASSWORD="<Salesforce Account User Name>"
     TOKEN="<Security Token from Salesforce Account>"
 
+This ballerina program can be build using the following command in root directory of the module
+```ballerina
+ballerina build -a
+```
+This can be executed by providing path to executable file generated after build and path to ballerina.conf file
+```ballerina
+ballerina run target/bin/cdata_salesforce.jar --b7a.config.file=ballerina.conf
+```
+
 ```ballerina    
 jdbc:Client cdataSalesforceDB = check new (
     "jdbc:salesforce:User="+config:getAsString("SALESFORCE_USERNAME") + ";Password=" + config:getAsString("PASSWORD") + ";Security Token=" + config:getAsString("TOKEN")
