@@ -30,7 +30,7 @@ Then in ballerina project we have to specify the driver in Ballerina.toml file.
 
         [[platform.libraries]] 
         path = "<path to cdata jdbc driver>" 
-        modules = ["<name of module>"]
+        modules = ["<name of package>"]
     
 Import needed libraries.
 ```ballerina
