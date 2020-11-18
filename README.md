@@ -41,6 +41,11 @@ import ballerina/config;
 ```
 Then we have to initialize the jdbc client using a connection string by providing necessary configuration information in a ballerina.conf file. Security token can be obtained from Salesforce account by signing into it.
 
+While executing program provide configuration details in ballerina.conf file as, Security Token can be obtained in personal information section in Salesforce account settings.
+    SALESFORCE_USERNAME="<Salesforce Account User Name>"
+    PASSWORD="<Salesforce Account User Name>"
+    TOKEN="<Security Token from Salesforce Account>"
+
 ```ballerina    
 jdbc:Client cdataSalesforceDB = check new (
     "jdbc:salesforce:User="+config:getAsString("USERNAME") + ";Password=" + config:getAsString("PASSWORD") + ";Security Token=" + config:getAsString("TOKEN")
