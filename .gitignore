@@ -1,1 +1,9 @@
 target
+# Log file
+*.log
+
+#conf file
+ballerina.conf
+
+#lock file
+*Ballerina.lock
