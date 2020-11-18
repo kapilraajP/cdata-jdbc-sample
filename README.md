@@ -48,7 +48,7 @@ While executing the program, provide configuration details in the ballerina.conf
 
 ```ballerina    
 jdbc:Client cdataSalesforceDB = check new (
-    "jdbc:salesforce:User="+config:getAsString("USERNAME") + ";Password=" + config:getAsString("PASSWORD") + ";Security Token=" + config:getAsString("TOKEN")
+    "jdbc:salesforce:User="+config:getAsString("SALESFORCE_USERNAME") + ";Password=" + config:getAsString("PASSWORD") + ";Security Token=" + config:getAsString("TOKEN")
 );
 ```
 ### Executing Statements
