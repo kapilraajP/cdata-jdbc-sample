@@ -17,7 +17,7 @@ public function main() returns @tainted error?{
     
     // JDBC client created using CData JDBC driver. 
     jdbc:Client|sql:Error cdataSalesforceDB = check new (
-        "jdbc:salesforce:User=" + config:getAsString("USERNAME") + ";Password=" + config:getAsString("PASSWORD") + ";Security Token=" + config:getAsString("TOKEN")
+        "jdbc:salesforce:User=" + config:getAsString("SALESFORCE_USERNAME") + ";Password=" + config:getAsString("PASSWORD") + ";Security Token=" + config:getAsString("TOKEN")
     );
 
     if(cdataSalesforceDB is sql:Error){
